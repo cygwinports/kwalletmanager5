@@ -1,0 +1,31 @@
+ORIG_PN="kwalletmanager"
+inherit kf5
+
+NAME="kwalletmanager5"
+VERSION=16.08.3
+RELEASE=1
+CATEGORY="KDE"
+SUMMARY="KDE 5 wallet manager"
+DESCRIPTION="Part of the KDE utilities suite"
+
+PKG_NAMES="${NAME} kwalletmanager-common"
+kwalletmanager5_REQUIRES="kwalletmanager-common"
+kwalletmanager5_CONTENTS="
+	etc/dbus-1/system.d/org.kde.kcontrol.kcmkwallet5.conf
+	etc/postinstall/kwalletmanager5.sh
+	usr/bin/kwalletmanager5.exe
+	usr/lib/qt5/plugins/kcm_kwallet5.dll
+	usr/libexec/kauth/kcm_kwallet_helper5.exe
+	usr/share/applications/*${NAME}*.desktop
+	usr/share/dbus-1/system-services/org.kde.kcontrol.kcmkwallet5.service
+	usr/share/doc/HTML/en/kwallet5/
+	usr/share/doc/${NAME}/
+	usr/share/kservices5/kwalletconfig5.desktop
+	usr/share/kservices5/kwalletmanager5_show.desktop
+	usr/share/kxmlgui5/${NAME}/
+"
+kwalletmanager_common_CONTENTS="
+	usr/share/icons/hicolor/*/actions/wallet-*.png
+	usr/share/icons/hicolor/*/apps/kwalletmanager.png
+	usr/share/icons/hicolor/*/apps/kwalletmanager2.png
+"
