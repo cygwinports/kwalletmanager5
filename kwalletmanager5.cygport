@@ -2,7 +2,7 @@ ORIG_PN="kwalletmanager"
 inherit kf5
 
 NAME="kwalletmanager5"
-VERSION=16.08.3
+VERSION=17.04.3
 RELEASE=1
 CATEGORY="KDE"
 SUMMARY="KDE 5 wallet manager"
