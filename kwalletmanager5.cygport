@@ -2,7 +2,7 @@ ORIG_PN="kwalletmanager"
 inherit kf5
 
 NAME="kwalletmanager5"
-VERSION=17.04.3
+VERSION=17.08.3
 RELEASE=1
 CATEGORY="KDE"
 SUMMARY="KDE 5 wallet manager"
@@ -18,7 +18,7 @@ kwalletmanager5_CONTENTS="
 	usr/libexec/kauth/kcm_kwallet_helper5.exe
 	usr/share/applications/*${NAME}*.desktop
 	usr/share/dbus-1/system-services/org.kde.kcontrol.kcmkwallet5.service
-	usr/share/doc/HTML/en/kwallet5/
+	usr/share/doc/HTML/*/kwallet5/
 	usr/share/doc/${NAME}/
 	usr/share/kservices5/kwalletconfig5.desktop
 	usr/share/kservices5/kwalletmanager5_show.desktop
@@ -28,4 +28,6 @@ kwalletmanager_common_CONTENTS="
 	usr/share/icons/hicolor/*/actions/wallet-*.png
 	usr/share/icons/hicolor/*/apps/kwalletmanager.png
 	usr/share/icons/hicolor/*/apps/kwalletmanager2.png
+	usr/share/locale/*/LC_MESSAGES/kcmkwallet.mo
+	usr/share/locale/*/LC_MESSAGES/kwalletmanager.mo
 "
